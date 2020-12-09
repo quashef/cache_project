@@ -5,8 +5,8 @@
 `define TAG 20          // address(32)-index(8)-offset(4)
 
 
-module cache_memory (clk, address, read, dataIn, dataOut, hit);
-
+module cache_mem (clk, address, read, dataIn, dataOut, hit);
+	integer i;
     input clk;
     input [31:0] address;  
     input read;
@@ -23,7 +23,7 @@ module cache_memory (clk, address, read, dataIn, dataOut, hit);
     // initialize cache flags
     initial begin 
          for(i=0; i<`BLOCKS; i=i+1) begin
-        cache[i][0] = 0;  // all blocks are invalid at first
+			cache[i][0] = 0;  // all blocks are invalid at first
          end
     end
 
@@ -31,9 +31,8 @@ module cache_memory (clk, address, read, dataIn, dataOut, hit);
     begin
         index = address[11:4];
         blockOffset = address[3:0];
-        if(read == 0) begin           // !read was asserted upon a miss, start filling cache @ addressed block
-            valid = 1;                // assert valid bit
-            buffer[0] = valid;
+        if(read == 0) begin           // !read was asserted upon a miss, start filling cache @ addressed block                           
+            buffer[0] = 1;		      // assert valid bit
             buffer[`TAG:1] = address[31:12];
             buffer[512+`TAG: 21] = dataIn;   // fill from main mem
             cache[index] = buffer;
@@ -51,7 +50,7 @@ module cache_memory (clk, address, read, dataIn, dataOut, hit);
             //dataOut = cache[index][`SIZE*blockOffset+ `SIZE+ `TAG -: 32];
         end
         else begin      // since at first, read is undefined
-            hit = 0;
+            hit = 1;
         end
     end
 

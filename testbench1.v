@@ -1,9 +1,10 @@
-module main_tb();
+module testbench1();
     reg [31:0] address;
     reg clk;
 
     wire [31:0] dataOut;
     wire hit;
+    wire read;
 
     integer count = 0;
     integer fp1;
@@ -12,13 +13,14 @@ module main_tb();
     reg [31:0] A;
 
     main uut(
+    .read(read),
     .clk(clk),
     .hit(hit),
     .address(address),
     .dataOut(dataOut)
     );
     initial begin 
-        fp1 = $fopen("instruction_sets/gcc.txt", "r");
+        fp1 = $fopen("gcc.txt", "r");
         clk = 0;
         count = 1;
         instructionCount = 0;
@@ -34,7 +36,7 @@ module main_tb();
     always begin
         #2 clk = ~clk;
         if(clk == 1 && hit == 0)
-            count = count + 1;
+            count = count + 1;     //miss count
         // $display("clk = %b hit = %b read = %b address = %h dataout = %h count = %d",clk,hit,uut.read,address,dataOut,count);
         $display("%d %d",instructionCount,count);
     end

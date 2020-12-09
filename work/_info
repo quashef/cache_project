@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/19.1
+vcache_controller
+Z0 !s110 1607521343
+!i10b 1
+!s100 :j^NGYOILzPd2Gf7NC8eQ1
+I1?C_dQmSdBk=>O]zKBI[e3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/4-2/VLSI/Lab/project/codes/cache_project
+w1607517698
+8C:/4-2/VLSI/Lab/project/codes/cache_project/cache_controller.v
+FC:/4-2/VLSI/Lab/project/codes/cache_project/cache_controller.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1607521343.000000
+!s107 C:/4-2/VLSI/Lab/project/codes/cache_project/cache_controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/4-2/VLSI/Lab/project/codes/cache_project/cache_controller.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcache_mem
+R0
+!i10b 1
+!s100 ACZ4n?S<[h3^8NP<Y1^ZH0
+IZ92aUBHMdz8n=Hi9af2AE2
+R1
+R2
+w1607521337
+8C:/4-2/VLSI/Lab/project/codes/cache_project/cache_mem.v
+FC:/4-2/VLSI/Lab/project/codes/cache_project/cache_mem.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/4-2/VLSI/Lab/project/codes/cache_project/cache_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/4-2/VLSI/Lab/project/codes/cache_project/cache_mem.v|
+!i113 1
+R5
+R6
+vmain
+R0
+!i10b 1
+!s100 YE8E0=GH^GX4RA4A=U[3G3
+IhMPIXmmbOT8ifdc80YdMe3
+R1
+R2
+w1607521120
+8C:/4-2/VLSI/Lab/project/codes/cache_project/main.v
+FC:/4-2/VLSI/Lab/project/codes/cache_project/main.v
+L0 5
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/4-2/VLSI/Lab/project/codes/cache_project/main.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/4-2/VLSI/Lab/project/codes/cache_project/main.v|
+!i113 1
+R5
+R6
+vmain_mem
+R0
+!i10b 1
+!s100 NUP9X=`Pb:P5@He[^m?^n0
+IaN<L]KG0Kck`K4MCb2@T<2
+R1
+R2
+w1607518577
+8C:\4-2\VLSI\Lab\project\codes\cache_project\main_mem.v
+FC:\4-2\VLSI\Lab\project\codes\cache_project\main_mem.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\4-2\VLSI\Lab\project\codes\cache_project\main_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\4-2\VLSI\Lab\project\codes\cache_project\main_mem.v|
+!i113 1
+R5
+R6
+vtestbench1
+R0
+!i10b 1
+!s100 Ln[Dz?ANfTcllLCR0YmLW3
+ISAg7SkEEY:Fm8;E;1G3@O1
+R1
+R2
+w1607521138
+8C:/4-2/VLSI/Lab/project/codes/cache_project/testbench1.v
+FC:/4-2/VLSI/Lab/project/codes/cache_project/testbench1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/4-2/VLSI/Lab/project/codes/cache_project/testbench1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/4-2/VLSI/Lab/project/codes/cache_project/testbench1.v|
+!i113 1
+R5
+R6

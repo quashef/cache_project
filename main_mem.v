@@ -1,5 +1,5 @@
 // In our main memory, data at address location 'x' which is 32-bits, is 'x' itself
-module main_memory(clk,address,data_out);
+module main_mem (clk,address,data_out);
     input [31:0] address;
     input clk;
 
