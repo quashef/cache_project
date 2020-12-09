@@ -39,7 +39,7 @@ module cache_mem (clk, address, read, dataIn, dataOut, hit);
             dataOut = cache[index][`SIZE*blockOffset+ `SIZE+ `TAG -: 32];   // send out data from cache in cycle after miss
             hit = 1;
         end
-        if(read == 1) begin
+        else if(read == 1) begin
             if((address[31:12] == cache[index][`TAG:1]) && (cache[index][0] == 1)) begin   // valid and hit
                 hit = 1;
                 dataOut = cache[index][`SIZE*blockOffset+ `SIZE+ `TAG -: 32];
