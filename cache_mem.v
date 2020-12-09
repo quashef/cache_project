@@ -5,7 +5,7 @@
 `define TAG 20          // address(32)-index(8)-offset(4)
 
 
-module cache_mem (clk, address, read, dataIn, dataOut, hit);
+module cache_mem (clk, address, read, dataIn, dataOut, hit, valid);
 	integer i;
     input clk;
     input [31:0] address;  
@@ -14,6 +14,7 @@ module cache_mem (clk, address, read, dataIn, dataOut, hit);
 
     output reg hit;
     output reg [31:0] dataOut;        // SINGLE word read out from cache
+    output wire valid;
 
     reg [`BLOCK_SIZE + `TAG: 0] buffer;
     reg [7:0] index;
@@ -50,8 +51,10 @@ module cache_mem (clk, address, read, dataIn, dataOut, hit);
             //dataOut = cache[index][`SIZE*blockOffset+ `SIZE+ `TAG -: 32];
         end
         else begin      // since at first, read is undefined
-            hit = 1;
+            hit = 0;
         end
     end
+
+    assign valid = cache[address[11:4]][0];
 
 endmodule

@@ -5,6 +5,7 @@ module testbench1();
     wire [31:0] dataOut;
     wire hit;
     wire read;
+    wire valid;
 
     integer count = 0;
     integer fp1;
@@ -14,6 +15,7 @@ module testbench1();
 
     main uut(
     .read(read),
+    .valid(valid),
     .clk(clk),
     .hit(hit),
     .address(address),

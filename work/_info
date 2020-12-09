@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/intelFPGA/19.1
 vcache_controller
-Z0 !s110 1607521343
+Z0 !s110 1607525512
 !i10b 1
 !s100 :j^NGYOILzPd2Gf7NC8eQ1
 I1?C_dQmSdBk=>O]zKBI[e3
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1607521343.000000
+Z4 !s108 1607525512.000000
 !s107 C:/4-2/VLSI/Lab/project/codes/cache_project/cache_controller.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/4-2/VLSI/Lab/project/codes/cache_project/cache_controller.v|
 !i113 1
@@ -32,11 +32,11 @@ Z6 tCvgOpt 0
 vcache_mem
 R0
 !i10b 1
-!s100 ACZ4n?S<[h3^8NP<Y1^ZH0
-IZ92aUBHMdz8n=Hi9af2AE2
+!s100 0@fLSGaNR7CAI=L1M6@@H3
+IY@1Jh19e3WW@:kz;8fBJE0
 R1
 R2
-w1607521337
+w1607525508
 8C:/4-2/VLSI/Lab/project/codes/cache_project/cache_mem.v
 FC:/4-2/VLSI/Lab/project/codes/cache_project/cache_mem.v
 L0 8
@@ -53,11 +53,11 @@ R6
 vmain
 R0
 !i10b 1
-!s100 YE8E0=GH^GX4RA4A=U[3G3
-IhMPIXmmbOT8ifdc80YdMe3
+!s100 ]VLcCADLY=ANmlM96[_O81
+I62KO[JG:Ho=IPF_8b[XA]3
 R1
 R2
-w1607521120
+w1607524604
 8C:/4-2/VLSI/Lab/project/codes/cache_project/main.v
 FC:/4-2/VLSI/Lab/project/codes/cache_project/main.v
 L0 5
@@ -74,32 +74,32 @@ R6
 vmain_mem
 R0
 !i10b 1
-!s100 NUP9X=`Pb:P5@He[^m?^n0
-IaN<L]KG0Kck`K4MCb2@T<2
+!s100 ]^blZGH=IEOLM`PGjAI6G2
+IhN80bzY?M^?;XOO1fnBgB0
 R1
 R2
-w1607518577
-8C:\4-2\VLSI\Lab\project\codes\cache_project\main_mem.v
-FC:\4-2\VLSI\Lab\project\codes\cache_project\main_mem.v
+w1607523631
+8C:/4-2/VLSI/Lab/project/codes/cache_project/main_mem.v
+FC:/4-2/VLSI/Lab/project/codes/cache_project/main_mem.v
 L0 2
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:\4-2\VLSI\Lab\project\codes\cache_project\main_mem.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\4-2\VLSI\Lab\project\codes\cache_project\main_mem.v|
+!s107 C:/4-2/VLSI/Lab/project/codes/cache_project/main_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/4-2/VLSI/Lab/project/codes/cache_project/main_mem.v|
 !i113 1
 R5
 R6
 vtestbench1
 R0
 !i10b 1
-!s100 Ln[Dz?ANfTcllLCR0YmLW3
-ISAg7SkEEY:Fm8;E;1G3@O1
+!s100 U_^_Oc1j67h5gTMn=Co4V3
+I2>AR:;0_=11K_<gST?D^L3
 R1
 R2
-w1607521138
+w1607524541
 8C:/4-2/VLSI/Lab/project/codes/cache_project/testbench1.v
 FC:/4-2/VLSI/Lab/project/codes/cache_project/testbench1.v
 L0 1
